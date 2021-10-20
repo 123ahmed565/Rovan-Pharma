@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 :root{
-    --primary:#007bff;
+    --primary:#6699cc;
+    --secondary:#005b88;
 }
 
 *{
@@ -71,7 +72,7 @@ ul li a{
     transition: all 0.3s ease;
   }
   .navbar.sticky{
-    background:  #00b3cc;
+    background:  #6699cc;
     padding: 10px 0;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
   }
@@ -259,3 +260,175 @@ ul li a{
     }
   }
 /* end header */
+
+
+/* start about-us */
+.about-us{
+    margin-top: 60px;
+}
+
+.about-us h5{
+font-size: 14px;
+font-weight: 400;
+color: #707070;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+.about-us span{
+color: var(--primary);
+}
+
+.about-us h3{
+    font-size: 36px;
+    font-weight: 700;
+    color: #303030;
+}
+
+.about-us p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.about-us button{
+    background-color:var(--primary);
+    border: none;
+    margin-top: 10px;
+    padding: 10px 30px 10px 30px;
+    text-transform: uppercase;
+}
+
+.about-us button:hover{
+background-color: black;
+}
+
+
+.about-us .second-img{
+    border-radius: 50%;
+    width: 80%;
+    /* height: 100%; */
+}
+
+@media (max-width:768px) {
+    .about-us .second-img{
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    }
+}
+/* end about-us */
+
+/* start our-team */
+.our-team{
+    margin-top: 60px;
+}
+
+.our-team h5{
+font-size: 20px;
+font-weight: 400;
+color: #444444;
+line-height: 31px;
+text-transform: uppercase;
+letter-spacing: 2px;
+/* border-bottom: 1px solid var(--primary);
+width: 50%; */
+}
+
+
+.our-team h3{
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 69px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.our-team p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #444444;
+    line-height: 31px;
+}
+
+.our-team button{
+    background-color:var(--primary);
+    border: none;
+    margin-top: 10px;
+    padding: 10px 30px 10px 30px;
+    text-transform: uppercase;
+}
+
+.our-team button:hover{
+background-color: black;
+}
+
+
+.our-team .second-img{
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .our-team .second-img{
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    }
+}
+/* end our-team */
+
+/* start cards for teams */
+
+.cards-for-team{
+    margin-top: 30px;
+    background-color: #a0a0a0;
+    padding: 30px;
+}
+
+.cards-for-team .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.cards-for-team .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.cards-for-team  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .cards-for-team  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .cards-for-team  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .cards-for-team .flip-card-back {
+    background-color: var(--primary);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+ .cards-for-team .flip-card-back h1{
+
+  }
+/* end cards for teams */
