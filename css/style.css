@@ -139,7 +139,7 @@ ul li a{
   }
 
 .hamburger{
-    margin-left: 200px;
+    /* margin-left: 200px; */
 }
 
   .menu-list .cancel-btn{
@@ -344,6 +344,16 @@ width: 50%; */
     color: var(--primary);
 }
 
+@media (max-width:768px){
+  .our-team h3{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 69px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+}
+
 .our-team p{
     font-size: 20px;
     font-weight: 400;
@@ -378,57 +388,275 @@ background-color: black;
 /* end our-team */
 
 /* start cards for teams */
-
-.cards-for-team{
-    margin-top: 30px;
-    background-color: #a0a0a0;
-    padding: 30px;
+.our-team-cards{
+  margin-top: 80px;
 }
 
-.cards-for-team .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+.our-team-cards .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
 }
-.cards-for-team .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-.cards-for-team  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .cards-for-team  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .cards-for-team  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .cards-for-team .flip-card-back {
-    background-color: var(--primary);
-    color: white;
-    transform: rotateY(180deg);
-  }
 
- .cards-for-team .flip-card-back h1{
+.our-team-cards .title {
+  color: grey;
+  font-size: 18px;
+}
 
-  }
+.our-team-cards button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.our-team-cards a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.our-team-cards button:hover, a:hover {
+  opacity: 0.7;
+}
 /* end cards for teams */
+
+/* start testimonials */
+.testimonials{
+margin-top: 50px;
+}
+
+.testimonials .paraghraph{
+font-size: 20px;
+line-height: 31px;
+color: #444444;
+font-weight: 400;
+}
+
+.testimonials .paraghraph-2{
+font-size: 60px;
+line-height: 60px;
+color: #222222;
+font-weight: 400;
+}
+
+.testimonials span{
+  color: var(--primary);
+  font-weight: 800;
+  line-height: 69px;
+}
+
+.testimonials .wrapper{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  margin-top: 30px !important;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.testimonials .wrapper .box{
+  background: #fff;
+  width: calc(33% - 10px);
+  padding: 25px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+.testimonials .wrapper .box i.quote{
+  font-size: 20px;
+  color: #17a2b8;
+}
+.testimonials .wrapper .box .content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.testimonials .box .info .name{
+  font-weight: 600;
+  font-size: 17px;
+}
+.testimonials .box .info .job{
+  font-size: 16px;
+  font-weight: 500;
+  color: #17a2b8;
+}
+.testimonials .box .info .stars{
+  margin-top: 2px;
+}
+.testimonials .box .info .stars i{
+  color: #17a2b8;
+}
+.testimonials .box .content .image{
+  height: 75px;
+  width: 75px;
+  padding: 3px;
+  background: #17a2b8;
+  border-radius: 50%;
+}
+.testimonials .content .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.testimonials .box:hover .content .image img{
+  border-color: #fff;
+}
+@media (max-width: 1045px) {
+  .testimonials .wrapper .box{
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  .testimonials .wrapper .box{
+    width: 80%;
+  }
+}
+/* end testimonials */
+
+/* start contact-us */
+.contact-us{
+  background-color: var(--secondary);
+  margin-top: 50px;
+}
+
+.contact-us p{
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.contact-us h4{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.contact-us button{
+  border: none;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+/* end contact-us */
+
+
+/* start our-product */
+.our-product{
+  margin-top: 100px;
+}
+
+.our-product h5{
+  font-size: 20px;
+  font-weight: 400;
+  color: #707070;
+  letter-spacing: 2px; 
+  
+}
+
+.our-product span{
+  color: var(--primary);
+}
+
+.our-product h3{
+  font-size: 36px;
+  font-weight: 700;
+  color: #303030;
+}
+
+.our-product .card{
+  margin-top: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.our-product .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.our-product .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.our-product .card .p1{
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.our-product .card .p1:hover{
+ color: var(--primary);
+}
+
+.our-product .card .p2{
+  font-size: 18px;
+  color: #303030;
+  font-weight: 700;
+  margin-top: -15px;
+}
+
+.our-product button{
+  background-color:var(--primary);
+  border: none;
+  margin-top: 30px;
+  padding: 10px 30px 10px 30px;
+  text-transform: uppercase;
+  left: 50%;
+  right: 50%;
+}
+
+.our-product button:hover{
+  background-color: black;
+}
+
+/* start our-product */
+
+/* start footer */
+.footer-top {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #212529;
+  margin-top: 50px;
+}
+
+.footer-top a {
+  color: white;
+}
+
+.footer-top a:hover {
+  color: var(--primary);
+}
+
+.footer-top .icon-footer{
+  color: var(--primary);
+}
+.footer-bottom {
+  background-color: #212529;
+  border-top: 1px solid gray;
+}
+
+.social-icons a:hover{
+  color: var(--primary) !important;
+}
+
+/* end footer */
