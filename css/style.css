@@ -176,11 +176,13 @@ ul li a{
     padding: 25px 0;
     transition: all 0.3s ease;
   }
+
   .navbar.sticky{
     background:  #FAF9F6;
     padding: 0px;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
   }
+
   .navbar .content{
     display: flex;
     align-items: center;
@@ -194,6 +196,7 @@ ul li a{
   }
   .navbar .menu-list{
     display: inline-flex;
+    
   }
 
   @media (min-width:768px){
@@ -375,7 +378,7 @@ transition: 0.6s;
 
     .social-icons{
         margin-left: 0px !important;
-        /* margin-top: 25px; */
+        margin-top: -26px;
     }
     
   }
