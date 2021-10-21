@@ -193,10 +193,9 @@ ul li a{
   }
   .navbar .menu-list{
     display: inline-flex;
-    overflow: scroll;
   }
   
-  @media (min-width:768px){
+  @media (min-width:768px){ 
     .navbar .menu-list{
         margin-right: 300px !important;
         margin-top: 37px;

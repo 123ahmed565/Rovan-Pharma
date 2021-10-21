@@ -194,7 +194,6 @@ ul li a{
   }
   .navbar .menu-list{
     display: inline-flex;
-    overflow: scroll;
   }
 
   @media (min-width:768px){
@@ -226,16 +225,6 @@ ul li a{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-  }
-
-  @media (max-width:768px) {
-    .banner{
-      background: url("../image/landing-2.png") no-repeat;
-      height: 100vh;
-      background-size: cover;
-      background-position: center center;
-      background-attachment: fixed;
-    }
   }
 
   .about{
