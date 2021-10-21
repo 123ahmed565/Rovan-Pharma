@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 :root{
-  --primary:#689F38;
+  --primary:#8BC34A;
     --secondary:#005b88;
 }
 
@@ -138,6 +138,7 @@ ul li a{
       bottom: 60px;
       width: 40px;
       height: 40px;
+      z-index: 4000;
   }
 }
 /* end top button */
@@ -218,7 +219,7 @@ ul li a{
     border-bottom: 2px solid black;
   }
   .banner{
-    background: url("/image/landing-2.png") no-repeat;
+    background: url("../image/landing-2.png") no-repeat;
     height: 100vh;
     background-size: cover;
     background-position: center;
