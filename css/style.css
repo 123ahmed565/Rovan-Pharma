@@ -220,7 +220,7 @@ ul li a{
     /* transition: .3s all ease; */
   }
   .banner{
-    background: url("/image/landing-2.png") no-repeat;
+    background: url("../image/landing-2.png") no-repeat;
     height: 100vh;
     background-size: cover;
     background-position: center;
