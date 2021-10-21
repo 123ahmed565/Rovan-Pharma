@@ -553,36 +553,39 @@ color: white;
 /* end cards for teams */
 
 /* start testimonials */
-.testimonials{
-margin-top: 50px;
-}
-
 .testimonials .paraghraph{
-font-size: 20px;
-line-height: 31px;
-color: #444444;
-font-weight: 400;
+  margin-top: 70px;
+  font-size: 20px;
+  line-height: 31px;
+  color: #444444;
+  font-weight: 400;
 }
 
 .testimonials .paraghraph-2{
-font-size: 60px;
-line-height: 60px;
-color: #222222;
-font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #222222;
+  font-weight: 300;
 }
 
 .testimonials span{
-  color: var(--primary);
-  font-weight: 800;
-  line-height: 69px;
+font-size: 60px;
+line-height: 69px;
+color: var(--primary);
+font-weight: 800;
 }
-
+::selection{
+  background: rgba(23,162,184,0.3);
+}
 .testimonials .wrapper{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: var(--primary);
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
   display: flex;
-  margin-top: 30px !important;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -612,19 +615,19 @@ font-weight: 400;
 .testimonials .box .info .job{
   font-size: 16px;
   font-weight: 500;
-  color: #17a2b8;
+  color: var(--primary);
 }
 .testimonials .box .info .stars{
   margin-top: 2px;
 }
 .testimonials .box .info .stars i{
-  color: #17a2b8;
+  color: var(--primary);
 }
 .testimonials .box .content .image{
   height: 75px;
   width: 75px;
   padding: 3px;
-  background: #17a2b8;
+  color: var(--primary);
   border-radius: 50%;
 }
 .testimonials .content .image img{
@@ -643,9 +646,9 @@ font-weight: 400;
     margin: 10px 0;
   }
 }
-@media (max-width: 768px) {
-  .testimonials .wrapper .box{
-    width: 80%;
+@media (max-width: 702px) {
+  .testimonials  .wrapper .box{
+    width: 100%;
   }
 }
 /* end testimonials */
