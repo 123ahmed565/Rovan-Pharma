@@ -137,6 +137,7 @@ ul li a{
       bottom: 60px;
       width: 40px;
       height: 40px;
+      z-index: 4000;
   }
 }
 /* end top button */
@@ -269,7 +270,7 @@ ul li a{
 
 .dropbtn:hover{
   color: #007bff;
-  border-bottom: 2px solid #007bff;
+  /* border-bottom: 2px solid #007bff; */
 }
 
 @media (max-width:768px) {
