@@ -215,8 +215,8 @@ ul li a{
     transition: all 0.3s ease;
   }
   .menu-list li a:hover{
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
+    color: black;
+    border-bottom: 2px solid white;
     /* transition: .3s all ease; */
   }
   .banner{
@@ -259,6 +259,10 @@ ul li a{
     margin-bottom: 18px;
 }
 
+.social-icons a :hover{
+color: black !important;
+}
+
 
 .dropbtn {
   background: none;
@@ -270,7 +274,7 @@ ul li a{
 }
 
 .dropbtn:hover{
-  color: #007bff;
+  color: black;
   /* border-bottom: 2px solid #007bff; */
 }
 
@@ -305,7 +309,7 @@ transition: 0.6s;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color:#00b3cc;}
+.dropdown-content a:hover {background-color:var(--primary);}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
@@ -917,7 +921,7 @@ padding: 20px;
 }
 
 .contact-us input[type=submit] {
-  background-color: var(--primary);
+  background-color: #303030;
   color: white;
   padding: 12px 20px;
   border: none;

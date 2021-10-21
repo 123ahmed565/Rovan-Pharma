@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 :root{
-    --primary:#6699cc;
+  --primary:#689F38;
     --secondary:#005b88;
 }
 
@@ -175,7 +175,7 @@ ul li a{
     transition: all 0.3s ease;
   }
   .navbar.sticky{
-    background: #6699cc;
+    background: var(--primary);
     padding: 0px;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
   }
@@ -214,8 +214,8 @@ ul li a{
     transition: all 0.3s ease;
   }
   .menu-list li a:hover{
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
+    color: black;
+    border-bottom: 2px solid white;
   }
   .banner{
     background: url(/image/landing.jpg) no-repeat;
@@ -256,6 +256,10 @@ ul li a{
     margin-right: 150px;
     margin-bottom: 18px;
   }
+
+  .social-icons a :hover{
+    color: black !important;
+    }
   
   .dropbtn {
     background: none;
@@ -275,7 +279,7 @@ ul li a{
   }
 
   .dropbtn:hover{
-    color: #007bff;
+    color: black;
     /* border-bottom: 2px solid #007bff; */
   }
   
@@ -302,7 +306,7 @@ ul li a{
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color:#00b3cc;}
+  .dropdown-content a:hover {background-color:var(--primary);}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
@@ -595,7 +599,7 @@ font-weight: 800;
 }
 .testimonials .wrapper .box i.quote{
   font-size: 20px;
-  color: #17a2b8;
+  color: var(--primary);
 }
 .testimonials .wrapper .box .content{
   display: flex;
@@ -694,7 +698,7 @@ font-weight: 800;
   }
   .testimonials .wrapper .box i.quote{
     font-size: 20px;
-    color: #17a2b8;
+    color: var(--primary);
   }
   .testimonials .wrapper .box .content{
     display: flex;
@@ -710,19 +714,19 @@ font-weight: 800;
   .testimonials .box .info .job{
     font-size: 16px;
     font-weight: 500;
-    color: #17a2b8;
+    color: var(--primary);
   }
   .testimonials .box .info .stars{
     margin-top: 2px;
   }
   .testimonials .box .info .stars i{
-    color: #17a2b8;
+    color: var(--primary);
   }
   .testimonials .box .content .image{
     height: 75px;
     width: 75px;
     padding: 3px;
-    background: #17a2b8;
+    background: var(--primary);
     border-radius: 50%;
   }
   .testimonials .content .image img{
@@ -867,11 +871,11 @@ font-weight: 800;
 }
 
 .footer-top a:hover {
-  color: #00b3cc;
+  color: var(--primary);
 }
 
 .footer-top .icon-footer{
-  color: #00b3cc;
+  color: var(--primary);
 }
 .footer-bottom {
   background-color: #212529;
@@ -1003,7 +1007,7 @@ padding: 20px;
 }
 
 .contact-us input[type=submit] {
-  background-color: var(--primary);
+  background-color:  #303030;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -1013,6 +1017,9 @@ padding: 20px;
   cursor: pointer;
 }
 
+.contact-us  input[type=submit]{
+
+}
 
 .contact-us  input[type=submit]:hover {
   background-color: black;
