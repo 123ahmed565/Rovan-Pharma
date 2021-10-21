@@ -197,6 +197,7 @@ ul li a{
   @media (min-width:768px){
     .navbar .menu-list{
         margin-right: 300px !important;
+        margin-top: 37px;
     }
   }
   
@@ -429,6 +430,7 @@ background-color: black;
   text-align: center;
   width: 100%;
   margin-top: 40px;
+  height: 340px;
   }
 }
 /* end about-us */
@@ -499,7 +501,7 @@ background-color: black;
   text-align: center;
   width: 100%;
   margin-top: 40px;
-  height: 325px;
+  height: 340px;
   }
 }
 /* end our-team */
