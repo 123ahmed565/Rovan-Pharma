@@ -175,6 +175,7 @@ ul li a{
     z-index: 2;
     padding: 25px 0;
     transition: all 0.3s ease;
+    display: flow-root;
   }
 
   .navbar.sticky{
@@ -222,12 +223,23 @@ ul li a{
     border-bottom: 2px solid black;
     /* transition: .3s all ease; */
   }
+
   .banner{
-    background: url("../image/landing-2.png") no-repeat;
+    background: url("../image/landing-2.png") no-repeat center center fixed;
     height: 100vh;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+  }
+
+  @media (max-width:768px) {
+    .banner{
+      background: url("../image/landing-2.png") no-repeat;
+      height: 100vh;
+      background-size: contain;
+      background-position:center center;
+      background-attachment: fixed;
+    }
   }
 
   .about{
