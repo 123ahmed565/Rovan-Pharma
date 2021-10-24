@@ -115,11 +115,11 @@ ul li a{
 /* start top button */
 .scroll-to-top{
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 30px;
+  right: 30px;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   font-size: 20px;
   color: white;
   background:var(--primary);  
