@@ -4,7 +4,7 @@
 
 :root{
     --primary:#8BC34A;
-    --secondary:#005b88;
+    --secondary:black;
 }
 
 *{
@@ -211,7 +211,7 @@ ul li a{
     list-style: none;
   }
   .menu-list li a{
-    color: var(--primary);
+    color: var(--secondary);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -219,8 +219,8 @@ ul li a{
     transition: all 0.3s ease;
   }
   .menu-list li a:hover{
-    color: black;
-    border-bottom: 2px solid black;
+    color: white;
+    border-bottom: 2px solid white;
     /* transition: .3s all ease; */
   }
 
@@ -273,17 +273,17 @@ ul li a{
 .social-icons{
     margin-left: 150px;
     margin-bottom: 18px;
-    color: var(--primary) !important;
+    color: var(--secondary) !important;
 }
 
 .social-icons a :hover{
-color: black !important;
+color: white !important;
 }
 
 
 .dropbtn {
   background: none;
-  color: var(--primary);
+  color: var(--secondary);
   font-size: 18px;
   font-weight: 600;
   margin-left: 20px;
@@ -292,7 +292,7 @@ color: black !important;
 
 .dropbtn:hover{
   color: black;
-  /* border-bottom: 2px solid #007bff; */
+  /* border-bottom: 2px solid white; */
 }
 
 @media (max-width:768px) {
@@ -326,7 +326,7 @@ transition: 0.6s;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color:var(--primary);}
+.dropdown-content a:hover {background-color:var(--secondary);color: white;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
