@@ -841,6 +841,7 @@ font-weight: 800;
   padding: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  float: right;
 }
 /* end contact-us */
 
