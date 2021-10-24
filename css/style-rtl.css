@@ -126,6 +126,7 @@ ul li a{
   background:var(--primary);  
   border: none;  
   transition-duration: 500ms;
+  z-index: 4000;
 }
 
 .scroll-to-top:hover{
@@ -221,8 +222,8 @@ ul li a{
     transition: all 0.3s ease;
   }
   .menu-list li a:hover{
-    color: white;
-    border-bottom: 2px solid white;
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
   }
   .banner{
     background: url("../image/landing-2.png") no-repeat;
@@ -272,7 +273,7 @@ ul li a{
   }
 
   .social-icons a :hover{
-    color: white !important;
+    color: var(--primary) !important;
     }
   
   .dropbtn {
@@ -293,7 +294,7 @@ ul li a{
   }
 
   .dropbtn:hover{
-    color: white;
+    color: var(--primary);
     /* border-bottom: 2px solid #007bff; */
   }
   
