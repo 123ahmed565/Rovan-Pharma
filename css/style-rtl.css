@@ -160,6 +160,11 @@ ul li a{
 .breadcamps p{
   color: #707070;
 }
+
+.breadcamps span{
+  font-weight: bold;
+  color: black;
+}
 /* end design breadcamp */
   
   /* start header */
@@ -253,11 +258,7 @@ ul li a{
     cursor: pointer;
     display: none;
   }
-  
-  .hamburger{
-    /* margin-right: 200px; */
-  }
-  
+
   .menu-list .cancel-btn{
     position: absolute;
     left: 30px;
@@ -393,6 +394,20 @@ ul li a{
   }
 
   /* end header */
+
+  /* start image to all pages without home page */
+.image-to-other-pages img{
+  /* width: 100%; */
+  height: 500px;
+}
+
+@media (max-width:768px) {
+  .image-to-other-pages img{
+    max-width: 100%;
+    height: 300px;
+  }
+}
+/* end  image to all pages without home page */
 
   /* start about-us */
 .about-us{
