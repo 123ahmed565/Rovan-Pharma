@@ -253,7 +253,7 @@ ul li a{
     text-align: justify;
   }
   .icon{
-    color: var(--primary);
+    color: white;
     font-size: 20px;
     cursor: pointer;
     display: none;
@@ -279,7 +279,7 @@ ul li a{
     background: none;
     color: var(--secondary);
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     margin-left: 20px;
     border: none;
   }
@@ -293,7 +293,7 @@ ul li a{
   }
 
   .dropbtn:hover{
-    color: black;
+    color: white;
     /* border-bottom: 2px solid #007bff; */
   }
   
@@ -394,6 +394,20 @@ ul li a{
   }
 
   /* end header */
+
+  /* start image just to home page */
+.image-to-home-page img{
+  /* width: 100%; */
+  height: 700px;
+}
+
+@media (max-width:768px) {
+.image-to-home-page img{
+  max-width: 100%;
+  height: 300px;
+}
+}
+/* end image just ti home page */
 
   /* start image to all pages without home page */
 .image-to-other-pages img{
