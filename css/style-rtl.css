@@ -365,7 +365,7 @@ ul li a{
       display: block;
       padding: 40px 0;
       text-align: center;
-      background: #222;
+      background: #555453;
       transition: all 0.3s ease;
     }
     .navbar.show .menu-list{
