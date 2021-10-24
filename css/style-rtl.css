@@ -408,7 +408,7 @@ ul li a{
   }
 
   }
-  @media (max-width: 320px) {
+  @media (max-width: 326px) {
     .navbar .logo img{
       font-size: 27px;
     }
