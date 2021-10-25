@@ -1473,7 +1473,7 @@ transition: .4s all ease;
 
 /* start product details */
 
-.prooooooduct .product-name img{
+/* .prooooooduct .product-name img{
 max-width: 100%;
 height: 350px;
 }
@@ -1483,7 +1483,7 @@ height: 350px;
     width: 100%;
     height: 350px;
     }
-}
+} */
 
 .prooooooduct .box-container{
   /* margin: auto; */
@@ -1560,11 +1560,11 @@ height: 350px;
   line-height: 27px;
 }
 
-.prooooooduct .recents-news img{
+/* .prooooooduct .recents-news img{
   width: 100%;
   padding: 5px;
   height: 80px;
-}
+} */
 
 /* end product details */
 
