@@ -1072,6 +1072,12 @@ font-weight: 800;
   color: var(--primary) !important;
   transition: .2s all ease;
 }
+
+@media (max-width:768px) {
+  .footer-top .footer-center-mobile{
+    text-align: center !important;
+  }
+}
 /* end footer */
 
 
