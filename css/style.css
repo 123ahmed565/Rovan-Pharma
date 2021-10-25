@@ -434,13 +434,13 @@ transition: 0.6s;
 /* start image just to home page */
 .image-to-home-page img{
     /* width: 100%; */
-    height: 700px;
+    height: 500px;
 }
 
 @media (max-width:768px) {
   .image-to-home-page img{
     max-width: 100%;
-    height: 300px;
+    height: 150px;
   }
 }
 /* end image just ti home page */
@@ -454,7 +454,7 @@ transition: 0.6s;
 @media (max-width:768px) {
   .image-to-other-pages img{
     max-width: 100%;
-    height: 300px;
+    height: 150px;
   }
 }
 /* end  image to all pages without home page */
@@ -870,7 +870,7 @@ font-weight: 800;
 }
 
 .lastest-article h5{
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
   color: #707070;
   text-transform: uppercase;
@@ -946,8 +946,8 @@ font-weight: 800;
 
 /* start footer */
 .footer-top {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 70px;
   background-color: #212529;
   margin-top: 50px;
 }
@@ -972,10 +972,21 @@ font-weight: 800;
   color: var(--primary) !important;
 }
 
+.footer-top .follow-us{
+  cursor: pointer;
+}
+
+.follow-us h5{
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.footer-top .follow-us i:hover{
+  color: var(--primary) !important;
+  transition: .2s all ease;
+}
 /* end footer */
-
-
-
 
 /* start design page contact us */
 .contact-info{
