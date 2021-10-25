@@ -1245,6 +1245,18 @@ padding: 20px;
 
 /* start Blog page */
 
+.blog .picture-blog{
+  max-width: 100%;
+  height: 350px;
+}
+
+@media (max-width:768px) {
+  .blog .picture-blog img{
+    width: 100%;
+    height: 150px;
+    }
+}
+
 .blog .box-container{
   /* margin: auto; */
   margin-top: 20%;
