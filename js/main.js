@@ -74,3 +74,11 @@ faders.forEach(fader=>{
 sliders.forEach(slider =>{
 appearOnScroll.observe(slider);
 });
+
+
+
+
+AOS.init({
+  duration: 3000,
+  once: true,
+});
