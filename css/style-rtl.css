@@ -79,6 +79,7 @@ ul li a{
   opacity: 1;
   animation-name: lds-heart;
   animation-iteration-count: infinite;
+  background-color: white;
 }
 
 @media (max-width:768px) {
@@ -154,7 +155,7 @@ ul li a{
 /* start navbar canavs */
 @media (min-width:768px) {
   .navbar-nav{
-      margin-right: 29%;
+      margin-right: 23%;
   }
 }
 
@@ -212,7 +213,7 @@ ul li a{
   color: black !important;
   line-height: 30px;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .nav-item .nav-link:hover{
@@ -249,7 +250,7 @@ ul li a{
   color: black;
   line-height: 30px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .dropbtn:hover{
@@ -381,27 +382,17 @@ background-color: black;
 
 
 .about-us .second-img{
-  border-radius: 50%;
-  width: 80%;
-  /* height: 100%; */
+  width: 360px;
+  height: 340px;
 }
 
 @media (max-width:768px) {
-  .about-us .second-img{
-  text-align: center;
-  width: 100%;
-  margin-top: 40px;
-  height: 340px;
-  }
-}
-
-@media (max-width:320px) {
-  .about-us .second-img{
-  text-align: center;
-  width: 100%;
-  margin-top: 40px;
-  height: 300px;
-  }
+    .about-us .second-img{
+      width: 260px;
+      height: 240px;
+      text-align: center;
+      margin-top: 20px;
+    }
 }
 /* end about-us */
 
@@ -793,7 +784,9 @@ font-weight: 800;
   background-color: #212529;
   border-top: 1px solid gray;
 }
-
+.social-icons{
+  font-size: 20px;
+}
 .social-icons a:hover{
   color: var(--primary) !important;
 }
@@ -1439,7 +1432,7 @@ transition: .4s all ease;
 
 /* start question-answer */
 .accordion-button.collapsed {
-  background: var(--primary);
+  background: var(--primary) !important;
 }
 
 .accordion-button.collapsed:hover{
@@ -1461,7 +1454,8 @@ transition: .4s all ease;
 }
 
 .accordion-flush .accordion-item .accordion-button{
-  /* background-color: wheat !important; */
+  background-color: var(--primary) ;
+  color: black;
   border: none !important;
   box-shadow: none !important;
 }
