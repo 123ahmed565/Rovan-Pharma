@@ -17,33 +17,44 @@ if(document.documentElement.scrollTop <=200){
 }
 });
 
-    
-    // for sticky navbar content
-    const body = document.querySelector("body");
-    const navbar = document.querySelector(".navbar");
-    const menuBtn = document.querySelector(".menu-btn");
-    const cancelBtn = document.querySelector(".cancel-btn");
-    menuBtn.onclick = ()=>{
-      navbar.classList.add("show");
-      menuBtn.classList.add("hide");
-      body.classList.add("disabled");
-    }
-    cancelBtn.onclick = ()=>{
-      body.classList.remove("disabled");
-      navbar.classList.remove("show");
-      menuBtn.classList.remove("hide");
-    }
-    window.onscroll = ()=>{
-      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-    }
 
-
-    // preloader
+// preloader
 window.onload = function () {
-  //hide the preloader
-  document.querySelector('.loader_bg').style.display = "none";
+  document.querySelector('.loading-overlay ').style.display = "none";
 };
 
+
+// start swiper for succes partner
+var swiper = new Swiper(".mySwiper5", {
+  slidesPerView: 0,
+  spaceBetween: 30,
+  grabCursor:true,
+  freeMode: true,
+  loop:false,
+  autoplay: {
+    delay: 2000,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints:{
+    0: {
+      slidesPerView: 2.5,
+      spaceBetween: 15
+  
+    },
+    600: {
+      slidesPerView: 3.5,
+      spaceBetween: 20
+    },
+    1000: {
+      slidesPerView: 5,
+      spaceBetween: 20
+    },
+      
+  }
+});
 
 
 // animation

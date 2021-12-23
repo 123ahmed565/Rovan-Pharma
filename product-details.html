@@ -17,83 +17,85 @@
 <body>
 
   <!-- start preloader -->
-  <div class="loader_bg">
-    <div class="loader"></div>
+  <div class="loading-overlay">
+    <img class="image-load spinner-grow " src="./image/logo.png" alt="">
   </div>
-  <!-- end preloader  -->
+  <!-- end preloader -->
 
   <!-- top button -->
   <button class="scroll-to-top"><i class="fas fa-long-arrow-alt-up"></i></button>
   <!-- end top button -->
 
   <!-- start header -->
-  <nav class="navbar">
-    <div class="content">
-      <div class="icon menu-btn">
-        <i class="fas fa-bars fa-2x hamburger"></i>
-      </div>
-      <div class="logo">
-        <a href="./index.html"><img src="./image/logo.png" class="img-fluid" alt="" width="80" height="80"></a>
-      </div>
-      <ul class="menu-list">
-        <div class="icon cancel-btn">
-          <i class="fas fa-times"></i>
+  <nav class="navbar navbar-expand-sm shadow-sm bg-white sticky-top">
+    <div class="container">
+      <i class="fas fa-bars  mt-2 mr-3" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
+      <a href="./index.html"> <img class="logo-navbar" src="./image/logo.png" width="60" height="60" alt="image logo"
+          loading="lazy"> </a>
+      <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white"><a href="./index.html">Rovan Pharma </a></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about-us.html">About</a></li>
-        <!-- <li><a href="#">Services</a></li> -->
-        <div class="dropdown">
-          <a href="./our-product.html"><button class="dropbtn">Products</button></a>
-          <div class="dropdown-content">
-            <a href="./product-details.html">product 1</a>
-            <a href="./product-details.html">product 2</a>
-            <a href="./product-details.html">product 3</a>
-          </div>
-        </div>
-
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./contact-us.html">Contact</a></li>
-
-        <!-- social icons -->
-        <div class="text-white social-icons">
-          <div class="dropdown">
-            <button class="dropbtn"><i class="fas fa-language m-2"></i>Lan</button>
-            <div class="dropdown-content">
-              <a href="ar/product-details.html">العربية</a>
-              <a href="/product-details.html">English</a>
-              <a href="#">french</a>
+        <div class="offcanvas-body col justify-content-md-between">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about-us.html">About</a>
+            </li>
+            <div class="dropdown d-flex">
+              <button class="dropbtn pe-2 ps-2">Products</button>
+              <div class="dropdown-content">
+                <a href="./our-product.html">product 1</a>
+                <a href="./our-product.html">product 2</a>
+                <a href="./our-product.html">product 3</a>
+              </div>
             </div>
+            <li class="nav-item">
+              <a class="nav-link" href="./question-answer.html">Question</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact-us.html">Contact</a>
+            </li>
+            <div class="dropdown mt-2">
+              <button class="dropbtn"><i class="fas fa-language m-2"></i>Lan</button>
+              <div class="dropdown-content">
+                <a href="ar/index.html">العربية</a>
+                <a href="./index.html">English</a>
+              </div>
+            </div>
+          </ul>
+
+          <!-- start social-icons -->
+          <div class="social-icons mt-2">
+            <a href="#"><i class="fab fa-facebook-f m-2"></i></a>
+            <a href="#"><i class="fab fa-twitter m-2"></i></a>
+            <a href="#"><i class="fab fa-instagram m-2"></i></a>
+            <a href="#"><i class="fab fa-whatsapp m-2"></i></a>
           </div>
-          <a href="#"><i class="fab fa-facebook-f m-2"></i></a>
-          <a href="#"><i class="fab fa-twitter m-2"></i></a>
-          <a href="#"><i class="fab fa-instagram m-2"></i></a>
-          <a href="#"><i class="fab fa-facebook-f m-2"></i></a>
+
         </div>
-      </ul>
-
-
+      </div>
     </div>
   </nav>
-  <!-- end header -->
+  <!--end header  -->
 
-  <!-- <div class="banner"></div> -->
-
-  <!--start image background  -->
-  <div class="image-to-other-pages">
-    <img src="./image/landing.jpg" class="img-fluid w-100" alt="">
-  </div>
-  <!-- end image backgroud -->
-
-
-  <!-- start breadcamps -->
-  <div class="breadcamps mt-5">
-    <div class="container">
-      <!-- <span class="span111"><i class="fas fa-home"></i> Home <i class="fa fa-chevron-right"></i><span class="span222">About</span></span> -->
-      <p><a href="./index.html"><i class="fas fa-home"></i>Home</a><i class="fa fa-chevron-right"></i> <span>Product
-          Details</span> </p>
+  <!-- start slider -->
+  <div class="big-image" style="height: 350px;">
+    <div class="overlay">
+      <!-- <h1 class="mt-5">terms & conditions</h1> -->
+      <p class="mt-5" style="font-size: 30px"><a href="./index.html"><i class="fas fa-home fa-1x m-2"></i>Home</a><i
+          class="fa fa-chevron-right m-2"></i>
+        <span class="text-white fa-1x">Product details</span>
+      </p>
     </div>
   </div>
-  <!-- end breadcamps -->
+  <!-- end slider -->
 
   <!-- start product details  -->
   <div class="prooooooduct">
